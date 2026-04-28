@@ -4,6 +4,13 @@ on: [push]
 jobs:
   say-hello:
     runs-on: ubuntu-latest
+    
     steps:
+      - name: checkout repo code
+        uses: actions/checkout@v4
+      
+      - name: list file in repo
+        run: ls -R
+      
       - name: print a massege
-        run: echo "github action sekh raha hon"
+        run: echo "repo checkout k liay"
