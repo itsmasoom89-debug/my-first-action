@@ -2,8 +2,8 @@ name: my first action
 on: [push]
 
 jobs:
- say-hello
-  run-on: ubuntu-latest
-  steps:
-    - name: print a massege
-      run: echo "github action sekh raha hon"
+  say-hello
+    runs-on: ubuntu-latest
+    steps:
+      - name: print a massege
+        run: echo "github action sekh raha hon"
