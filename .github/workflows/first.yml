@@ -2,7 +2,7 @@ name: my first action
 on: [push]
 
 jobs:
-  say-hello
+  say-hello:
     runs-on: ubuntu-latest
     steps:
       - name: print a massege
